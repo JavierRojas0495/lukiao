@@ -1,0 +1,71 @@
+/* public/css/styles.css */
+body {
+    padding-top: 56px;
+}
+
+.sidebar {
+    position: fixed;
+    top: 56px;
+    bottom: 0;
+    left: 0;
+    z-index: 1000;
+    padding: 20px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    background-color: #343a40; /* Fondo del panel lateral */
+    border-right: 1px solid #dee2e6;
+}
+
+.sidebar-sticky {
+    position: relative;
+    top: 0;
+    height: calc(100vh - 56px);
+    padding-top: 0.5rem;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.sidebar a {
+    color: #fff; /* Color de texto enlaces del panel lateral */
+    text-decoration: none;
+}
+
+.sidebar a:hover {
+    color: #007bff; /* Color de texto enlaces del panel lateral al pasar el ratón */
+}
+
+.sidebar .nav-item {
+    padding: 8px 0;
+}
+
+.sidebar .nav-link {
+    display: flex;
+    align-items: center;
+}
+
+.sidebar .nav-link i {
+    margin-right: 8px;
+}
+
+.sidebar .nav-link.collapsible {
+    cursor: pointer;
+}
+
+.sidebar .nav-link.collapsed::after {
+    content: "\f054"; /* Icono de flecha derecha (FontAwesome) */
+    margin-left: auto;
+}
+
+.sidebar .nav-link:not(.collapsed)::after {
+    content: "\f078"; /* Icono de flecha abajo (FontAwesome) */
+    margin-left: auto;
+}
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    background-color: #343a40;
+    color: #fff;
+}
